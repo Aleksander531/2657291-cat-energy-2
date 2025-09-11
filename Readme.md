@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Александр Волков](https://up.htmlacademy.ru/adaptive-individual/2/user/2657291).
-* Наставник: [Александр Лесухин] (https://htmlacademy.ru/profile/caneklis).
+* Наставник: [Александр Александрович Лесухин] (https://htmlacademy.ru/profile/caneklis).
 
 ---
 
