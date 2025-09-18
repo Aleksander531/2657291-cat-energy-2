@@ -5,3 +5,82 @@
 
 /* BLOCKS */
 @import "./blocks/header.scss";
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald/oswaldregular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/oswald/oswaldregular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/Lato-Regular.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/lato/Lato-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(68, 68, 68, 1);
+}
+
+.container-mobile {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.container-tablet {
+  width: 708px;
+  margin: 0 auto;
+}
+
+.container-desktop {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 110px;
+}
+
+
