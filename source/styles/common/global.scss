@@ -1,4 +1,8 @@
-*, *::before, *::after {
+*::before {
+  box-sizing: border-box;
+}
+
+*::after {
   box-sizing: border-box;
 }
 
@@ -13,26 +17,10 @@
   overflow: hidden;
 }
 
-body {
+.page__body {
   font-family: $primary-font;
   font-size: 24px;
   font-weight: 400;
-}
-
-.container-mobile {
-  width: 280px;
-  margin: 0 auto;
-}
-
-.container-tablet {
-  width: 708px;
-  margin: 0 auto;
-}
-
-.container-desktop {
-  width: 1440px;
-  margin: 0 auto;
-  padding: 0 110px;
 }
 
 /* здесь используйте глобальные селекторы img, body, html и так далее */
