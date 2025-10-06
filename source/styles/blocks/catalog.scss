@@ -1,6 +1,32 @@
 .catalog-list__item-title {
+  font-family: $primary-font;
+  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   vertical-align: middle;
   text-transform: uppercase;
+  color: $card-color-title;
+}
+
+.catalog-list__descriptions {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: $dark-color;
+}
+
+.catalog-list__item-title--special {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(17, 17, 17, 1);
+}
+
+.button--more {
+  color: $dark-color;
 }

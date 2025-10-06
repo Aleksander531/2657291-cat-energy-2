@@ -23,4 +23,14 @@
   font-weight: 400;
 }
 
+.button {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: $light-color;
+}
 /* здесь используйте глобальные селекторы img, body, html и так далее */

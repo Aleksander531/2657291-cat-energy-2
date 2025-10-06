@@ -1,7 +1,30 @@
 .additional-list__item-title {
+  font-family: $primary-font;
+  font-weight: 400;
   font-size: 16px;
   line-height: 16px;
   text-align: center;
   vertical-align: middle;
   text-transform: uppercase;
+  color: $card-color-title;
+}
+
+.additional-list__item-volume {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  vertical-align: middle;
+  color: $dark-color;
+}
+
+.additional-list__item-price {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: right;
+  vertical-align: middle;
+  color: $dark-color;
 }

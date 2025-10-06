@@ -1,5 +1,18 @@
 .stocks__title {
+  font-family: $primary-font;
+  font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  color: $title-color;
+}
+
+.stocks__discription {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  color: $light-color;
 }
