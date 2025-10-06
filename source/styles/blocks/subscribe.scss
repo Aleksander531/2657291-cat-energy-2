@@ -1,5 +1,22 @@
 .subscribe__discription {
+  font-family: $primary-font;
+  font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+  color: $title-color;
+}
+
+.subscribe__field {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
+  color: $dark-color;
+}
+
+.button-subscribe {
+  font-size: 20px;
+  line-height: 26px;
 }

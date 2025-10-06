@@ -1,12 +1,45 @@
 .example__title {
+  font-family: $primary-font;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: center;
+  color: $title-color;
 }
 
 .example__text {
-  font-family: "Lato", sans-serif;
+  font-family: $secondary-font;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  color: $dark-color;
+}
+
+.example__terms {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: $title-color;
+}
+
+.example__description {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  color: $dark-color;
+}
+
+.example__text--price {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $title-color;
 }

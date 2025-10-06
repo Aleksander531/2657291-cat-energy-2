@@ -1,5 +1,26 @@
 .program__title {
+  font-family: $primary-font;
+  font-weight: 400;
   font-size: 24px;
+  color: $light-color;
   line-height: 37px;
   text-transform: uppercase;
+}
+
+.program__text {
+  font-family: $dark-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark-color;
+}
+
+.program__link {
+  font-family: $primary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $title-color;
 }
