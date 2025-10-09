@@ -4,4 +4,45 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-color;
+
+  &.description__text::before {
+    content: "";
+    position: relative;
+    width: 60px;
+    height: 60px;
+    background-color: rgba(104, 183, 56, 1);
+  }
+
+  &.description__text::after {
+    content: "";
+    position: relative;
+    top: -65px;
+    left: 15px;
+    width: 30px;
+    height: 32px;
+  }
+
+  &.description__text--one::after {
+    background-image: url("/icons/sheet.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &.description__text--two::after {
+    background-image: url("/icons/powder.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &.description__text--tree::after {
+    background-image: url("/icons/tableware.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &.description__text--four::after {
+    background-image: url("/icons/clock.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }

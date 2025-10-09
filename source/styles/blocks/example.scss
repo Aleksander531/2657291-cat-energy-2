@@ -43,3 +43,24 @@
   text-transform: uppercase;
   color: $title-color;
 }
+
+.example__button-slider {
+  position: relative;
+  height: 256px;
+  width: 4px;
+  background-color: rgba(102, 102, 102, 1);
+  border-radius: 2px;
+  padding: 0;
+  border: transparent;
+
+  &.example__button-slider::after {
+    content: "";
+    position: relative;
+    left: -17px;
+    height: 40px;
+    width: 40px;
+    background-image: url("/icons/slider.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+}
