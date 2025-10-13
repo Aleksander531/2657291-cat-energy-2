@@ -1,15 +1,21 @@
 .main-footer__copyright {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
   display: block;
   min-width: 280px;
   min-height: 34px;
-  /*background-color: $dark-color;
-  mask-image: url("/icons/HTML-Academy-text.svg"), url("/icons/html-academy.svg");
-  mask-repeat: no-repeat;
-  mask-size: 113px 20px, 27px 34px;
-  mask-position: left, right;*/
+  text-decoration: none;
+  color: $dark-color;
+  filter: grayscale(100%);
 
   &:hover,
   &:focus {
-    background-color: rgba(104, 183, 56, 1);
+    filter: none;
+  }
+
+  &:active {
+    opacity: 30%;
   }
 }

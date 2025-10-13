@@ -16,21 +16,14 @@
   <header class="main-header">
     <a class="main-header__logo" href="#">
       <picture>
-        <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo-desktop.svg">
-        <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo-tablet.svg">
-        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта">
+        <source media="(min-width: 1440px)" width="202" height="59" type="image/svg+xml" srcset="images/logo-header-desktop.svg">
+        <source media="(min-width: 768px)" width="174" height="50" type="image/svg+xml" srcset="images/logo-header-tablet.svg">
+        <img class="main-header__logo-img" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта">
       </picture>
-    </a>
-    <a class="main-header__logo-text" href="#">
       <picture>
-        <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text.svg">
-        <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-text.svg">
-        <img src="images/logo-text.svg" width="101" height="18" alt="Логотип текст">
+        <img class="main-header__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Логотип сайта">
       </picture>
     </a>
-    <button class="main-header__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
 
     <nav class="navigation visually-hidden">
       <ul class="navigation__list">
@@ -50,6 +43,10 @@
           </a>
         </li>
       </ul>
+
+      <button class="main-header__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
     </nav>
   </header>
 
@@ -153,7 +150,7 @@
   <footer class="main-footer">
     <div class="main-footer__container">
       <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <img src="/icons/footer-logo.svg" alt="логотип Cat Energy" width="128" height="24">
+        <img class="main-footer__logo-img" src="images/footer-logo.svg" alt="логотип Cat Energy" width="128" height="24">
       </a>
 
       <ul class="social-list">
@@ -168,8 +165,9 @@
         </li>
       </ul>
 
-      <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
-        <img class="main-footer__copyright-img" src="/images/HTML-Academy-text.svg" width="113" height="20" alt="логотип HTML Academy">
+      <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive">
+        HTML Academy
+        <img class="main-footer__copyright-img" src="images/html-academy-green.svg" width="113" height="20" alt="логотип HTML Academy">
       </a>
     </div>
   </footer>
