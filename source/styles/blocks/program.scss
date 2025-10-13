@@ -1,3 +1,7 @@
+.program__item {
+  position: relative;
+}
+
 .program__title {
   font-family: $primary-font;
   font-weight: 400;
@@ -45,7 +49,7 @@
   position: relative;
 }
 
-.program__icon-one::before {
+.program__item-slim::before {
   content: "";
   position: absolute;
   left: 7px;
@@ -56,7 +60,7 @@
   background-repeat: no-repeat;
 }
 
-.program__icon-two::before {
+.program__item-pro::before {
   content: "";
   position: absolute;
   top: 11px;

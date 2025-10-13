@@ -1,28 +1,12 @@
-.main-footer__logo {
-  display: block;
-  min-width: 128px;
-  min-height: 24px;
-  background-color: rgba(17, 17, 17, 1);
-  mask-image: url("/icons/footer-logo.svg");
-  mask-repeat: no-repeat;
-  mask-size: 128px 24px;
-  mask-position: center;
-
-  &:hover,
-  &:focus {
-    background-color: rgba(62, 62, 62, 1);
-  }
-}
-
 .main-footer__copyright {
   display: block;
   min-width: 280px;
   min-height: 34px;
-  background-color: $dark-color;
+  /*background-color: $dark-color;
   mask-image: url("/icons/HTML-Academy-text.svg"), url("/icons/html-academy.svg");
   mask-repeat: no-repeat;
   mask-size: 113px 20px, 27px 34px;
-  mask-position: left, right;
+  mask-position: left, right;*/
 
   &:hover,
   &:focus {

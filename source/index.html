@@ -61,8 +61,8 @@
       <p class="promo__text">Занялся собой? Займись котом!</p>
       <a class="button" href="#">подобрать программу</a>
       <picture>
-        <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="images/promo@1x.webp, images/promo@2x.webp 2x">
-        <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/promo@1x.webp, images/promo@2x.webp 2x">
+        <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/promo-decktop@1x.png, images/promo-decktop@2x.png 2x">
+        <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/promo-tablet@1x.png, images/promo-tablet@2x.png 2x">
         <img class="promo__images" src="images/promo@1x.png" srcset="images/promo@2x.png" width="280" height="270" alt="Баночка питания Cat Energu Pro курица">
       </picture>
     </section>
@@ -70,17 +70,15 @@
     <section class="section">
       <h2 class="visually-hidden">Выбор программы</h2>
       <ul class="program">
-        <li class="program__item">
+        <li class="program__item program__item-slim">
           <h3 class="program__title">похудение</h3>
           <p class="program__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="program__link" href="catalog.html">каталог slim</a>
-          <div class="program__icon program__icon-one"></div>
         </li>
-        <li class="program__item">
+        <li class="program__item program__item-pro">
           <h3 class="program__title">набор массы</h3>
           <p class="program__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
           <a class="program__link" href="catalog.html">каталог pro</a>
-          <div class="program__icon program__icon-two"></div>
         </li>
       </ul>
     </section>
@@ -123,10 +121,10 @@
       <p class="example__text example__text--price">Затраты на питание: 15 000 руб.</p>
       <div class="example__slider">
         <picture>
-          <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/slider-tablet@1x.png, images/slider-tablet@2x.png 2x">
+          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/slider-tablet@1x.png, images/slider-tablet@2x.png 2x">
           <img class="example__img" src="images/slider@1x.png" srcset="images/slider@2x.png" width="280" height="256" alt="слайдер">
         </picture>
-        <button class="example__button-slider" type="button"></button>
+        <button class="example__button-slider" type="button" aria-label="Слайдер"></button>
       </div>
     </section>
 
@@ -144,8 +142,8 @@
 
       <div class="contacts__map">
         <picture>
-          <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="images/map-desktop@1x.jpg, images/map-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/map-tablet@1x.jpg, images/map-tablet@2x.jpg 2x">
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/png" srcset="images/Map-desktop@1x.png, images/Map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/png" srcset="images/Map-tablet@1x.png, images/Map-tablet@2x.png 2x">
           <img class="contacts__img" src="images/map-mobile@1x.jpg" srcset="images/map-mobile@2x.jpg 2x" width="320" height="362" alt="Карта">
         </picture>
       </div>
@@ -154,7 +152,9 @@
 
   <footer class="main-footer">
     <div class="main-footer__container">
-      <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive" aria-label="логотип"></a>
+      <a class="main-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img src="/icons/footer-logo.svg" alt="логотип Cat Energy" width="128" height="24">
+      </a>
 
       <ul class="social-list">
         <li class="social-list__item">
@@ -168,7 +168,9 @@
         </li>
       </ul>
 
-      <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy"></a>
+      <a class="main-footer__copyright" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+        <img class="main-footer__copyright-img" src="/images/HTML-Academy-text.svg" width="113" height="20" alt="логотип HTML Academy">
+      </a>
     </div>
   </footer>
 
