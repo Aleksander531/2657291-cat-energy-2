@@ -1,3 +1,21 @@
-.main-footer {
-  color: #ff0000;
+.main-footer__copyright {
+  font-family: $secondary-font;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  display: block;
+  min-width: 280px;
+  min-height: 34px;
+  text-decoration: none;
+  color: $dark-color;
+  filter: grayscale(100%);
+
+  &:hover,
+  &:focus {
+    filter: none;
+  }
+
+  &:active {
+    opacity: 30%;
+  }
 }

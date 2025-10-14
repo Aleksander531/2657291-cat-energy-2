@@ -5,6 +5,17 @@
   line-height: 24px;
   text-align: center;
   color: $title-color;
+  position: relative;
+
+  &::before {
+    content: "";
+    display: block;
+    min-width: 280px;
+    min-height: 290px;
+    background-image: url("/images/cat-bag-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .stocks__discription {
