@@ -1,11 +1,5 @@
-*::before {
+*, *::before, *::after {
   box-sizing: border-box;
-  display: block;
-}
-
-*::after {
-  box-sizing: border-box;
-  display: block;
 }
 
 .visually-hidden {
@@ -17,6 +11,15 @@
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+*a {
+  display: block;
+  text-decoration: none;
+}
+
+*img {
+  display: block;
 }
 
 .page__body {
