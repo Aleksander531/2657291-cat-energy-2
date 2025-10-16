@@ -41,7 +41,7 @@
           </a>
         </li>
       </ul>
-      <button class="main-header__toggle main-header__toggle--active" type="button" aria-label="Открыть меню">
+      <button class="navigation__toggle" type="button" aria-label="Открыть меню">
         <span></span>
         <span></span>
         <span></span>
@@ -53,14 +53,17 @@
     <h1 class="visually-hidden">Функциональное
       питание для котов Cat Energy</h1>
     <section class="section promo">
-      <h2 class="promo__title">Функциональное питание для котов</h2>
-      <p class="promo__text">Занялся собой? Займись котом!</p>
+      <div class="promo__wrapper">
+        <h2 class="promo__title">Функциональное питание для котов</h2>
+        <p class="promo__text">Занялся собой? Займись котом!</p>
+      </div>
       <a class="button" href="#">подобрать программу</a>
       <picture>
         <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/promo-decktop@1x.png, images/promo-decktop@2x.png 2x">
         <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/promo-tablet@1x.png, images/promo-tablet@2x.png 2x">
         <img class="promo__images" src="images/promo@1x.png" srcset="images/promo@2x.png" width="280" height="270" alt="Баночка питания Cat Energu Pro курица">
       </picture>
+      <button class="promo__button" type="button">Подобрать программу</button>
     </section>
 
     <section class="section">
@@ -79,9 +82,9 @@
       </ul>
     </section>
 
-    <section class="section">
-      <h2 class="section__title">Как это работает</h2>
-      <ul class="description">
+    <section class="section description">
+      <h2 class="description__title">Как это работает</h2>
+      <ul class="description__list">
         <li class="description__item">
           <p class="description__text description__text--one">Функциональное питание содержит только полезные питательные вещества.</p>
         </li>

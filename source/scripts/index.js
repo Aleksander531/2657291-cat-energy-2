@@ -1,9 +1,9 @@
-const headerToggle = document.querySelector('.main-header__toggle');
+const headerToggle = document.querySelector('.navigation__toggle');
 const navList = document.querySelector('.navigation__list');
 
 if (headerToggle && navList) {
   headerToggle.addEventListener('click', () => {
-    headerToggle.classList.toggle('main-header__toggle--active');
+    headerToggle.classList.toggle('navigation__toggle--active');
     navList.classList.toggle('navigation__list--close');
   });
 }

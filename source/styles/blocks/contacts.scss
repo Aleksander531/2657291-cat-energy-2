@@ -1,10 +1,25 @@
+.contacts {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.contacts__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 15px;
+  padding: 26px 20px;
+}
+
 .contacts__text {
   font-family: $primary-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  text-align: left;
   color: rgba(17, 17, 17, 1);
+  margin: 0;
 }
 
 .contacts__address a {
@@ -14,4 +29,5 @@
   line-height: 20px;
   color: $dark-color;
   list-style-type: none;
+  font-style: normal;
 }

@@ -1,3 +1,18 @@
+.main-footer {
+  background-color: rgba(242, 242, 242, 1);
+}
+
+.main-footer__container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 0 20px;
+}
+
+.main-footer__logo {
+  margin: 0 auto;
+  padding: 40px 0 20px;
+}
+
 .main-footer__copyright {
   font-family: $secondary-font;
   font-weight: 400;

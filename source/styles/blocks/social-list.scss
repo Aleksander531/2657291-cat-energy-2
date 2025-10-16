@@ -1,9 +1,11 @@
 .social-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 20px;
   display: flex;
-  list-style: none;
+  flex-wrap: wrap;
   justify-content: center;
   margin-right: -24px;
-  padding: 0;
 }
 
 .social-list__item {
@@ -13,8 +15,8 @@
 .social-list__link {
   text-decoration: none;
   display: block;
-  min-width: 28px;
-  min-height: 22px;
+  width: 28px;
+  height: 22px;
   mask-size: 28px 22px;
   background-color: rgba(102, 102, 102, 1);
   position: relative;

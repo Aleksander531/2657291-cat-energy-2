@@ -5,11 +5,17 @@
   padding: 13px 20px 14px;
 }
 
+@media (min-width: $tablet-width) {
+  .main-header {
+    padding: 25px 34px 0 30px;
+  }
+}
+
 .main-header__logo {
   display: flex;
-  flex-grow: 1;
   align-items: center;
-  min-width: 250px;
+  min-width: 174px;
+  margin-right: 33px;
 }
 
 .main-header__logo-text {
