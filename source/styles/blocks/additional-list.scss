@@ -1,12 +1,46 @@
+.additional-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  row-gap: 32px;
+}
+
+.additional-list__item {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  position: relative;
+  padding: 0 20px;
+}
+
 .additional-list__item-title {
   font-family: $primary-font;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   text-transform: uppercase;
   color: $card-color-title;
+  grid-row: 1/2;
+  margin: 0;
+
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    width: 80%;
+    height: 1px;
+    top: -13px;
+    background-color: rgba(205, 205, 205, 1);
+    justify-self: center;
+  }
+}
+
+.additional-list__item-wrapper {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .additional-list__item-volume {
@@ -14,9 +48,10 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 14px;
-  text-align: center;
+  text-align: left;
   vertical-align: middle;
   color: $dark-color;
+  margin: 0;
 }
 
 .additional-list__item-price {
@@ -27,4 +62,20 @@
   text-align: right;
   vertical-align: middle;
   color: $dark-color;
+  margin: 0;
+}
+
+.button {
+  grid-row: 3/-1;
+}
+
+.additional-list__item--last::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 80%;
+  height: 1px;
+  top: 6px;
+  background-color: rgba(205, 205, 205, 1);
+  justify-self: center;
 }
