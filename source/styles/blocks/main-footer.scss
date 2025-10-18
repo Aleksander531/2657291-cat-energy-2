@@ -18,12 +18,13 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  display: block;
   min-width: 280px;
   min-height: 34px;
   text-decoration: none;
   color: $dark-color;
   filter: grayscale(100%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   &:hover,
   &:focus {
