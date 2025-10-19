@@ -1,5 +1,6 @@
 .main-header {
-  display: flex;
+  display: grid;
+  grid-template-columns: min-content 1fr min-content;
   justify-content: space-between;
   align-items: center;
   padding: 13px 20px 14px;
@@ -13,13 +14,15 @@
 
 .main-header__logo {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  min-width: 174px;
-  margin-right: 33px;
+  min-width: 33px;
+  margin-right: 10px;
 }
 
 .main-header__logo-text {
   margin: 0 auto;
+  justify-self: center;
 }
 
 @media (min-width: 768px) {

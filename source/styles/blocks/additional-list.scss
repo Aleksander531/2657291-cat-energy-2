@@ -8,7 +8,8 @@
 
 .additional-list__item {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: min-content min-content 1fr;
+  row-gap: 13px;
   position: relative;
   padding: 0 20px;
 }
