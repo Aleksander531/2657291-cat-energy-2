@@ -6,9 +6,10 @@
   background-image: url("/images/cat-bag-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   padding-bottom: 40px;
-  margin-top: 35px;
   position: relative;
+  margin: 35px 20px 0;
 
   &::before {
     content: "Закажите все и получите чехол для кота в подарок!";

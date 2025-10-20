@@ -31,3 +31,14 @@
   list-style-type: none;
   font-style: normal;
 }
+
+.contacts__img {
+  display: block;
+  width: 100%;
+  min-height: 362px;
+  object-fit: cover;
+}
+
+.contacts__container--catalog {
+  background-color: rgba(242, 242, 242, 1);
+}

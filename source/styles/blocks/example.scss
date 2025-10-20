@@ -23,7 +23,7 @@
   font-size: 14px;
   line-height: 18px;
   color: $dark-color;
-  margin: 0;
+  margin: 20px auto;
 }
 
 .example__list {
@@ -36,6 +36,11 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  position: relative;
+}
+
+.example__item {
+  display: grid;
 }
 
 .example__terms {
@@ -48,6 +53,7 @@
   line-height: 24px;
   text-align: center;
   color: $title-color;
+  padding: 14px 14px 7px;
 }
 
 .example__description {
@@ -55,9 +61,23 @@
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
-  text-align: left;
+  text-align: center;
   vertical-align: middle;
   color: $dark-color;
+  position: absolute;
+  top: 80%;
+  background-color: rgba(234, 234, 234, 1);
+  width: min-content;
+}
+
+.example__description--one {
+  left: 10%;
+  transform: translate(-50%);
+}
+
+.example__description--two {
+  right: 5%;
+  transform: translate(-50%);
 }
 
 .example__text--price {

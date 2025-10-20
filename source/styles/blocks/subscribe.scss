@@ -1,13 +1,30 @@
+.subscribe {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  padding: 0 20px 40px;
+  justify-content: center;
+}
+
 .subscribe__title {
   font-family: $primary-font;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
-  text-align: center;
+  align-self: left;
   color: $title-color;
   position: relative;
-  padding-top: 20px;
-  margin: 15px 0;
+  display: inline-block;
+  padding: 40px 0 32px;
+  margin: 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 240px;
+    width: 50px;
+    border: solid 2px rgba(104, 183, 56, 1);
+  }
 }
 
 .subscribe__discription {
@@ -17,6 +34,16 @@
   line-height: 24px;
   text-align: center;
   color: $title-color;
+  padding: 0 20px;
+  margin: 0 0 24px;
+  display: grid;
+  height: 50px;
+}
+
+.subscribe__form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 16px;
 }
 
 .subscribe__field {
@@ -26,9 +53,13 @@
   line-height: 100%;
   text-transform: uppercase;
   color: $dark-color;
+  grid-row: 1/2;
+  display: grid;
+  align-items: center;
 }
 
-.button-subscribe {
+.button--subscribe {
   font-size: 20px;
   line-height: 26px;
+  grid-row: 2/3;
 }
