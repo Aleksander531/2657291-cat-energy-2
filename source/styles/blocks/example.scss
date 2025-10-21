@@ -1,9 +1,18 @@
 .example {
-  background-color: rgba(234, 234, 234, 1);
   display: grid;
   grid-template-rows: repeat(6, auto);
+  background-color: rgba(234, 234, 234, 1);
   row-gap: 20px;
   padding: 0 20px;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 1px rgba(230, 230, 230, 1);
+    grid-template-rows: repeat(3, auto) 1fr;
+    grid-template-columns: 1fr 1fr 3fr;
+    column-gap: 10px;
+  }
 }
 
 .example__title {
@@ -15,6 +24,11 @@
   color: $title-color;
   padding: 25px 0 20px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+  }
 }
 
 .example__text {
@@ -24,6 +38,11 @@
   line-height: 18px;
   color: $dark-color;
   margin: 20px auto;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
 }
 
 .example__list {
@@ -37,10 +56,18 @@
   line-height: 24px;
   text-align: center;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 3/4;
+    grid-column: 1/3;
+    display: grid;
+    grid-template-columns: 162px 162px;
+  }
 }
 
 .example__item {
   display: grid;
+  width: 100%;
 }
 
 .example__terms {
@@ -53,7 +80,8 @@
   line-height: 24px;
   text-align: center;
   color: $title-color;
-  padding: 14px 14px 7px;
+  padding: 14px 10px 7px;
+  max-width: 162px;
 }
 
 .example__description {
@@ -64,20 +92,10 @@
   text-align: center;
   vertical-align: middle;
   color: $dark-color;
-  position: absolute;
-  top: 80%;
   background-color: rgba(234, 234, 234, 1);
   width: min-content;
-}
-
-.example__description--one {
-  left: 10%;
-  transform: translate(-50%);
-}
-
-.example__description--two {
-  right: 5%;
-  transform: translate(-50%);
+  margin: -10px auto 0;
+  padding: 10px;
 }
 
 .example__text--price {
@@ -88,6 +106,11 @@
   text-align: center;
   text-transform: uppercase;
   color: $title-color;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 3/4;
+    grid-column: 3/-1;
+  }
 }
 
 .example__button-slider {
@@ -110,4 +133,15 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+
+.example__slider {
+  @media (min-width: $tablet-width) {
+    grid-row: 4/-1;
+    grid-column: 1/-1;
+  }
+}
+
+.example__img {
+  margin: 0 auto;
 }

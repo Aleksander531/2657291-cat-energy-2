@@ -6,11 +6,23 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 30px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 55px 0;
+  }
 }
 
 .main-footer__logo {
   margin: 0 auto;
   padding: 40px 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 0 0;
+    padding: 20px;
+  }
 }
 
 .main-footer__copyright {
@@ -19,6 +31,7 @@
   font-size: 16px;
   line-height: 20px;
   min-width: 280px;
+  max-width: 727px;
   min-height: 34px;
   text-decoration: none;
   color: $dark-color;
@@ -34,8 +47,19 @@
   &:active {
     opacity: 30%;
   }
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+  }
 }
 
 .main-footer__copyright-img {
   margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 23px;
+  }
 }
