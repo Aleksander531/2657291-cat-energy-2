@@ -1,6 +1,6 @@
 .navigation__list {
   margin: 0;
-  padding: 0;
+  padding: 0 20px;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -16,6 +16,10 @@
     position: relative;
     top: 0;
     margin-left: 33px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    justify-content: flex-end;
   }
 }
 

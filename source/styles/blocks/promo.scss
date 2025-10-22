@@ -2,6 +2,15 @@
   position: relative;
   display: flex;
   flex-direction: column;
+  margin: 0;
+
+  @media (min-width: $desktop-width-min) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    margin-left: 110px;
+    padding-bottom: 110px;
+  }
 }
 
 .promo__wrapper-img {
@@ -14,6 +23,12 @@
     position: relative;
     top: -100px;
   }
+
+  @media (min-width: $desktop-width-min) {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/promo-background@1x.png") center/cover;
+  }
 }
 
 .promo__images {
@@ -21,6 +36,14 @@
   min-width: 280px;
   min-height: 270px;
   object-fit: contain;
+
+  @media (min-width: $desktop-width-min) {
+    position: absolute;
+    top: 60px;
+    left: -10%;
+    grid-column: 2/4;
+    grid-row: 1/-1;
+  }
 }
 
 .promo__wrapper-text {
@@ -33,6 +56,11 @@
 
   @media (min-width: $tablet-width) {
     background: rgba(255, 255, 255, 1);
+  }
+
+  @media (min-width: $desktop-width-min) {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 }
 
@@ -54,6 +82,13 @@
     padding: 0;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width-min) {
+    margin: 0 70px;
+    padding: 0;
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
 }
 
 .promo__text {
@@ -74,15 +109,31 @@
     padding: 0 0 20px;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width-min) {
+    color: $title-color;
+    margin: 40px 70px 0;
+    padding: 0 0 20px;
+    text-align: left;
+  }
 }
 
 .button--promo {
-  margin-top: 140px;
+  margin: 140px 20px 0;
 
   @media (min-width: $tablet-width) {
     width: max-content;
     position: absolute;
     top: 100px;
     left: 100px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    position: relative;
+    top: -100px;
+    left: 50px;
+    margin: 0 20px;
+    display: block;
+    grid-column: 1/2;
   }
 }

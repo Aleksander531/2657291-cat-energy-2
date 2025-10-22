@@ -12,6 +12,13 @@
   }
 }
 
+@media (min-width: $desktop-width-min) {
+  .main-header {
+    margin: 0 110px;
+    padding: 55px 0;
+  }
+}
+
 .main-header__logo {
   display: flex;
   justify-content: space-between;

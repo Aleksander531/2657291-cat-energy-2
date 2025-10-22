@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 30px;
   }
+
+  @media (min-width: $desktop-width-min) {
+    margin: 0 110px;
+  }
 }
 
 .section__title {
