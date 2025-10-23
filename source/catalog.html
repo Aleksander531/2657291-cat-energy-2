@@ -56,7 +56,7 @@
   </header>
 
   <main class="page__main">
-    <h1 class="page__title">Каталог продукции</h1>
+    <h1 class="page__title page__title--catalog">Каталог продукции</h1>
     <section class="catalog">
       <h2 class="visually-hidden">Каталог товаров</h2>
       <ul class="catalog__list">
@@ -236,22 +236,28 @@
 
         <li class="additional-list__item">
           <h3 class="additional-list__item-title">питьевая вода</h3>
-          <p class="additional-list__item-volume">5 литров</p>
+          <div class="additional-list__item-wrapper">
+            <p class="additional-list__item-volume">5 литров</p>
           <p class="additional-list__item-price">50 ₽</p>
+          </div>
           <button class="button button--order" type="button">Заказать</button>
         </li>
 
         <li class="additional-list__item">
           <h3 class="additional-list__item-title">молоко</h3>
-          <p class="additional-list__item-volume">1 литр</p>
-          <p class="additional-list__item-price">100 ₽</p>
+          <div class="additional-list__item-wrapper">
+            <p class="additional-list__item-volume">1 литр</p>
+            <p class="additional-list__item-price">100 ₽</p>
+          </div>
           <button class="button button--order" type="button">Заказать</button>
         </li>
 
         <li class="additional-list__item additional-list__item--last">
           <h3 class="additional-list__item-title ">витамины</h3>
-          <p class="additional-list__item-volume">1 упаковка (30 г)</p>
-          <p class="additional-list__item-price">300 ₽</p>
+          <div class="additional-list__item-wrapper">
+            <p class="additional-list__item-volume">1 упаковка (30 г)</p>
+            <p class="additional-list__item-price">300 ₽</p>
+          </div>
           <button class="button button--order" type="button">Заказать</button>
         </li>
       </ul>

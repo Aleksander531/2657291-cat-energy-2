@@ -3,6 +3,13 @@
   grid-template-rows: 1fr min-content 1fr;
   padding: 0 20px 40px;
   justify-content: center;
+
+  @media (min-width: $tablet-width) {
+    justify-content: stretch;
+    padding: 80px 70px;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+  }
 }
 
 .subscribe__title {
@@ -38,12 +45,23 @@
   margin: 0 0 24px;
   display: grid;
   height: 50px;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+
+  }
 }
 
 .subscribe__form {
   display: grid;
   grid-template-rows: 1fr 1fr;
   row-gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .subscribe__field {
@@ -56,10 +74,22 @@
   grid-row: 1/2;
   display: grid;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 3/4;
+    display: flex;
+    flex-grow: 2;
+  }
 }
 
 .button--subscribe {
   font-size: 20px;
   line-height: 26px;
   grid-row: 2/3;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 3/4;
+    display: flex;
+    flex-grow: 1;
+  }
 }
