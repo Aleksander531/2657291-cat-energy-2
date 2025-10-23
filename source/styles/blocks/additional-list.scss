@@ -9,6 +9,14 @@
     display: grid;
     grid-template-rows: auto;
   }
+
+  @media (min-width: $desktop-width-min) {
+    grid-column: 1/2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 0;
+  }
 }
 
 .additional-list__item {
@@ -24,6 +32,16 @@
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 15px;
+    align-items: center;
+
   }
 }
 
@@ -44,6 +62,12 @@
     grid-row: 1/2;
     grid-column: 1/2;
   }
+
+  @media (min-width: $desktop-width-min) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: grid;
+  }
 }
 
 .additional-list__item-wrapper {
@@ -56,6 +80,11 @@
     justify-content: space-around;
     grid-row: 1/2;
     grid-column: 2/3;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    grid-column: 2/3;
+    grid-row: 1/2;
   }
 }
 
@@ -83,6 +112,14 @@
 
 .button {
   grid-row: 3/-1;
+}
+
+.button--additional {
+  @media (min-width: $desktop-width-min) {
+    grid-column: 3/-1;
+    grid-row: 1/2;
+    display: grid;
+  }
 }
 
 .additional-list__item--last {

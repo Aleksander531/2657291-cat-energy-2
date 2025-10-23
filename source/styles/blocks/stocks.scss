@@ -45,4 +45,13 @@
   @media (min-width: $tablet-width) {
     margin: 70px 0 0;
   }
+
+  @media (min-width: $desktop-width-min) {
+    display: grid;
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+  }
 }
