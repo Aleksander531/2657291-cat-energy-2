@@ -39,6 +39,8 @@
   @media (min-width: $tablet-width) {
     grid-row: 1/2;
     grid-column: 1/-1;
+    font-size: 60px;
+    line-height: 60px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -59,6 +61,8 @@
   @media (min-width: $tablet-width) {
     grid-row: 2/3;
     grid-column: 1/-1;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -104,6 +108,11 @@
   color: $title-color;
   padding: 14px 10px 7px;
   max-width: 162px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__description {
@@ -118,6 +127,11 @@
   width: min-content;
   margin: -10px auto 0;
   padding: 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }
 
 .example__text--price {
@@ -132,6 +146,8 @@
   @media (min-width: $tablet-width) {
     grid-row: 3/4;
     grid-column: 3/-1;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width-min) {

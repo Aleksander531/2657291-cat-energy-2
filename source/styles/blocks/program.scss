@@ -51,6 +51,8 @@
     grid-row: 1/2;
     grid-column: 1/2;
     align-self: end;
+    font-size: 36px;
+    line-height: 36px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -58,6 +60,8 @@
     grid-column: 2/-1;
     grid-row: 1/2;
     align-self: center;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
@@ -76,6 +80,8 @@
     grid-row: 2/3;
     grid-column: 1/2;
     align-self: center;
+    font-size: 16px;
+    line-height: 24px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -83,6 +89,8 @@
     grid-column: 1/-1;
     grid-row: 2/3;
     align-self: center;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -97,11 +105,18 @@
   grid-row: 3/-1;
   grid-column: 1/-1;
 
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 100%;
+  }
+
   @media (min-width: $desktop-width-min) {
     display: grid;
     grid-column: 1/-1;
     grid-row: 3/-1;
     align-self: center;
+    font-size: 20px;
+    line-height: 100%;
   }
 }
 
@@ -116,6 +131,12 @@
   background-image: url("/icons/arrow.svg");
   background-position: center;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    left: 150px;
+    width: 32px;
+    height: 10px;
+  }
 }
 
 .program__item-slim::before {

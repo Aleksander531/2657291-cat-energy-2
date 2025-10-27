@@ -23,6 +23,11 @@
 }
 
 .page__title--catalog {
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   @media (min-width: $desktop-width-min) {
     margin: 74px 110px 84px;
   }
