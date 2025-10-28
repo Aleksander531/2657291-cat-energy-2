@@ -4,8 +4,6 @@
 }
 
 .page__body {
-  max-width: 1440px;
-  min-height: 100%;
   margin: 0 auto;
   font-family: $secondary-font;
   font-size: 14px;
@@ -14,21 +12,14 @@
   color: $dark-color;
 }
 
-.page__title {
-  margin: 27px 20px 40px;
-
-  @media (min-width: $tablet-width) {
-    margin: 65px 30px 84px;
-  }
+.page__main {
+  position: relative;
+  margin: 0 auto;
 }
 
 .page__title--catalog {
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
-  }
-
-  @media (min-width: $desktop-width-min) {
-    margin: 74px 110px 84px;
   }
 }
