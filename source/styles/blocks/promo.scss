@@ -4,12 +4,15 @@
   flex-direction: column;
   margin: 0;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
   @media (min-width: $desktop-width-min) {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    margin-left: 110px;
-    padding-bottom: 110px;
+    padding: 0 110px 110px;
 
     &::before {
       grid-column: 2/3;

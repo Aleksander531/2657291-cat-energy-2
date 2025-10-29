@@ -7,19 +7,20 @@
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   margin: 0 auto;
+  padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    margin: 0 30px;
+    margin: 0 auto;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 55px 0;
+    padding: 55px 30px;
   }
 
   @media (min-width: $desktop-width-min) {
-    margin: 0 110px;
+    margin: 0 auto;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 66px 0;
+    padding: 66px 110px;
   }
 }
 
@@ -45,7 +46,7 @@
   color: $dark-color;
   filter: grayscale(100%);
   display: flex;
-  padding: 20px 20px 40px;
+  padding: 20px 0 40px;
 
   &:hover,
   &:focus {

@@ -9,17 +9,18 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
     border-top: none;
     align-items: center;
     gap: 0;
     background-color: rgba(242, 242, 242, 1);
     padding: 0 37px 40px;
-    max-width: 324px;
+    background: linear-gradient(#fff 82px, #f2f2f2 82px 511px);
   }
 
   @media (min-width: $desktop-width-min) {
     padding: 0 38px 40px;
-    max-width: 245px;
+
     display: flex;
     flex-direction: column;
     background-color: rgba(242, 242, 242, 1);
@@ -79,14 +80,24 @@
   text-align: center;
   color: $dark-color;
   grid-column: 1/-1;
+
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, min-content);
   width: 100%;
 }
 
+.catalog-item__description-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 2px 0;
+  border-bottom: solid 1px rgba(205, 205, 205, 1);
+}
+
 .catalog-item__term {
+  position: relative;
   justify-self: start;
-  grid-column: 1/2;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -95,7 +106,6 @@
 }
 
 .catalog-item__description {
-  grid-column: 2/3;
   justify-self: end;
 
   @media (min-width: $tablet-width) {
@@ -115,6 +125,13 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    background: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));
+    border: solid 1px rgba(242, 242, 242, 1);
+    min-height: 429px;
+    align-self: flex-end;
+  }
 }
 
 .button--more {
@@ -122,6 +139,10 @@
   display: block;
   color: rgba(68, 68, 68, 1);
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin-top: auto;
+  }
 }
 
 .catalog-item__title--special {
@@ -138,6 +159,10 @@
     background-image: url("/icons/plus.svg");
     background-position: center;
     background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 50px auto 23px;
   }
 }
 

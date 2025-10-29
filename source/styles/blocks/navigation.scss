@@ -101,6 +101,7 @@
   border: none;
   background-color: transparent;
   position: relative;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     display: none;

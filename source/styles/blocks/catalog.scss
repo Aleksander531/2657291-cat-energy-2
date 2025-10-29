@@ -13,15 +13,13 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 324px 324px;
+    grid-template-columns: 1fr 1fr;
     gap: 60px;
   }
 
   @media (min-width: $desktop-width-min) {
     margin: 0 110px;
     display: grid;
-    grid-template-rows: auto;
     grid-template-columns: repeat(auto-fit, 245px);
     gap: 63px 80px;
     max-width: 1440px;
