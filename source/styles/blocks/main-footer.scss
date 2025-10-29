@@ -3,6 +3,7 @@
 }
 
 .main-footer__container {
+  position: relative;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   margin: 0 auto;
