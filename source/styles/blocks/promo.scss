@@ -19,10 +19,11 @@
       content: "";
       position: absolute;
       width: 50vw;
-      height: 694px;
-      background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/promo-background@1x.png") right/contain;
+      height: calc(100% - 200px);
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/promo-background@1x.png");
       background-repeat: no-repeat;
-      background-position: 0, 150px;
+      background-position: 150% 150%;
+      background-size: contain;
       left: 50px;
       z-index: -10;
       top: -200px;
