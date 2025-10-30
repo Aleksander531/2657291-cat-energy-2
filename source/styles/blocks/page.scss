@@ -20,8 +20,16 @@
 }
 
 .page__title--catalog {
+  padding: 0 20px;
+  margin: 20px 0;
+
   @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    padding: 0 110px;
   }
 }
