@@ -1,28 +1,25 @@
-.main-header {
+.main-header__container {
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   justify-content: space-between;
   align-items: center;
   padding: 13px 20px 14px;
-}
+  max-width: 1440px;
+  margin: 0 auto;
 
-@media (min-width: $tablet-width) {
-  .main-header {
+  @media (min-width: $tablet-width) {
     padding: 25px 34px 25px 30px;
   }
-}
 
-@media (min-width: $desktop-width-min) {
-  .main-header {
-    margin: 0 110px;
-    padding: 55px 0;
+  @media (min-width: $desktop-width) {
+    padding: 55px 110px;
   }
 }
 
 .main-header__logo {
-  display: flex;
+  /*display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;*/
   min-width: 33px;
   margin-right: 10px;
 }

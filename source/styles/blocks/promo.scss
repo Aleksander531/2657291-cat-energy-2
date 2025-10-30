@@ -2,7 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  margin: 0;
+  max-width: 1440px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -12,21 +13,21 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: 0 110px 110px;
+    padding: 0 110px 200px;
 
     &::before {
       grid-column: 2/3;
       content: "";
       position: absolute;
       width: 50vw;
-      height: calc(100% - 200px);
+      min-height: 694px;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/promo-background@1x.png");
       background-repeat: no-repeat;
-      background-position: 150% 150%;
-      background-size: contain;
-      left: 50px;
-      z-index: -10;
+      background-position: right bottom;
+      background-size: cover;
+      left: -6px;
       top: -200px;
+      z-index: -2;
     }
   }
 }
@@ -51,8 +52,8 @@
 
   @media (min-width: $desktop-width-min) {
     position: absolute;
-    top: 60px;
-    left: -10%;
+    top: 74px;
+    left: -28%;
     grid-column: 2/4;
     grid-row: 1/-1;
   }
@@ -60,9 +61,7 @@
 
 .promo__wrapper-text {
   position: relative;
-  width: 100%;
-  min-height: 302px;
-  margin: 0 auto;
+  width: fit-content;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/promo-background@1x.png") center/cover;
   padding-bottom: 50px;
 
@@ -73,6 +72,8 @@
   @media (min-width: $desktop-width-min) {
     grid-column: 1/2;
     grid-row: 1/2;
+    width: 80%;
+    padding: 0 80px;
   }
 }
 
@@ -99,7 +100,7 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    margin: 0 70px;
+    margin: 55px 0 0;
     padding: 0;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -131,7 +132,7 @@
 
   @media (min-width: $desktop-width-min) {
     color: $title-color;
-    margin: 40px 70px 0;
+    margin: 40px 0 32px;
     padding: 0 0 20px;
     text-align: left;
     font-size: 20px;
@@ -153,11 +154,13 @@
 
   @media (min-width: $desktop-width-min) {
     position: relative;
-    top: -100px;
+    top: 0;
     left: 50px;
-    margin: 0 20px;
+    margin: 0 20px 0 30px;
+    padding: 15px 28px;
     display: block;
     grid-column: 1/2;
+    grid-row: 1/2;
     font-size: 20px;
     line-height: 26px;
   }

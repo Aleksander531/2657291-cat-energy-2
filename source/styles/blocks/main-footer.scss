@@ -8,6 +8,7 @@
   grid-template-rows: 1fr 1fr 1fr;
   margin: 0 auto;
   padding: 0 20px;
+  max-width: 1440px;
 
   @media (min-width: $tablet-width) {
     margin: 0 auto;
@@ -31,6 +32,10 @@
   @media (min-width: $tablet-width) {
     margin: 0 auto 0 0;
     padding: 20px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    padding: 0;
   }
 }
 
@@ -62,6 +67,10 @@
     padding: 20px;
     display: flex;
     justify-content: flex-end;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    padding: 0;
   }
 }
 
