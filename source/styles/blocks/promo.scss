@@ -2,7 +2,8 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
+  width: 100%;
+  max-width: 1280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -13,7 +14,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: 0 110px 200px;
+    padding: 0 0 200px;
 
     &::before {
       grid-column: 2/3;
@@ -34,7 +35,7 @@
 
 .promo__wrapper-img {
   position: absolute;
-  top: 180px;
+  top: 167px;
   left: 50%;
   transform: translate(-50%);
 
@@ -61,9 +62,10 @@
 
 .promo__wrapper-text {
   position: relative;
-  width: fit-content;
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/promo-background@1x.png") center/cover;
   padding-bottom: 50px;
+  margin: 0 auto;
+  width: 100vw;
 
   @media (min-width: $tablet-width) {
     background: rgba(255, 255, 255, 1);
@@ -120,6 +122,7 @@
   position: relative;
   z-index: 2;
   margin: 0;
+  padding-bottom: 114px;
 
   @media (min-width: $tablet-width) {
     color: $title-color;
@@ -141,7 +144,7 @@
 }
 
 .button--promo {
-  margin: 140px 20px 0;
+  margin: 138px 20px 0;
 
   @media (min-width: $tablet-width) {
     width: max-content;

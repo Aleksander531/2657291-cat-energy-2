@@ -3,8 +3,8 @@
   grid-template-columns: min-content 1fr min-content;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 20px 14px;
-  max-width: 1440px;
+  padding: 13px 7px 14px 20px;
+  max-width: 1280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -17,9 +17,9 @@
 }
 
 .main-header__logo {
-  /*display: flex;
+  /* display: flex;
   justify-content: space-between;
-  align-items: center;*/
+  align-items: center; */
   min-width: 33px;
   margin-right: 10px;
 }
@@ -27,10 +27,11 @@
 .main-header__logo-text {
   margin: 0 auto;
   justify-self: center;
-}
+  transform: translate(-9px);
 
-@media (min-width: 768px) {
-  .main-header__logo-text {
+  @media (min-width: 768px) {
     display: none;
   }
 }
+
+

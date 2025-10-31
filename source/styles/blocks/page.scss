@@ -12,6 +12,7 @@
   line-height: 18px;
   background-color: $light-color;
   color: $dark-color;
+  width: 100%;
 }
 
 .page__main {
@@ -30,6 +31,6 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    padding: 0 110px;
+
   }
 }

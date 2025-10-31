@@ -119,8 +119,12 @@
   display: block;
   width: 24px;
   height: 2px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   background-color: $title-color;
+}
+
+.navigation__toggle span:nth-child(1) {
+  margin-top: 4px;
 }
 
 .navigation__toggle--active span:nth-child(2) {
