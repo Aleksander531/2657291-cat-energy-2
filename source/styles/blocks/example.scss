@@ -106,7 +106,7 @@
 .example__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 32px;
+  column-gap: 50px;
   margin: 0;
   font-family: $primary-font;
   font-weight: 400;
@@ -114,6 +114,7 @@
   line-height: 24px;
   text-align: center;
   position: relative;
+  justify-self: center;
 
   @media (min-width: $tablet-width) {
     grid-row: 3/4;
@@ -170,7 +171,7 @@
   height: fit-content;
   position: absolute;
   top: 39px;
-  left: 24px;
+  left: 13px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
@@ -231,7 +232,8 @@
 
 .example__slider {
   padding-bottom: 20px;
-  
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
     grid-row: 4/-1;
     grid-column: 1/-1;
