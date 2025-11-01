@@ -106,7 +106,7 @@
 .example__list {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 50px;
+  column-gap: 35px;
   margin: 0;
   font-family: $primary-font;
   font-weight: 400;
@@ -147,8 +147,9 @@
   line-height: 24px;
   text-align: center;
   color: $title-color;
-  padding: 14px 10px 7px;
+  padding: 14px 17px 16px;
   max-width: 162px;
+  height: fit-content;
 
   @media (min-width: $tablet-width) {
     font-size: 30px;
@@ -171,7 +172,7 @@
   height: fit-content;
   position: absolute;
   top: 39px;
-  left: 13px;
+  left: 20px;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
