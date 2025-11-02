@@ -53,6 +53,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 26px;
+    padding: 0 10px 0 0;
   }
 }
 
@@ -70,12 +71,13 @@
     text-align: right;
     font-size: 16px;
     line-height: 20px;
+    padding: 0 60px 0 0;
   }
 }
 
 .contacts__address-sity {
   @media (min-width: $tablet-width) {
-    margin-top: 10px;
+    margin-top: 18px;
     display: inline-block;
   }
 }

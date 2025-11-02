@@ -14,7 +14,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    padding: 0 0 200px;
+    padding: 0 0 263px;
 
     &::before {
       grid-column: 2/3;
@@ -26,8 +26,8 @@
       background-repeat: no-repeat;
       background-position: right bottom;
       background-size: cover;
-      left: -6px;
-      top: -200px;
+      left: 0;
+      top: -169px;
       z-index: -2;
     }
   }
@@ -55,8 +55,8 @@
 
   @media (min-width: $desktop-width-min) {
     position: absolute;
-    top: 74px;
-    left: -28%;
+    top: -26px;
+    left: -25%;
     grid-column: 2/4;
     grid-row: 1/-1;
   }
@@ -78,7 +78,7 @@
     grid-column: 1/2;
     grid-row: 1/2;
     width: 80%;
-    padding: 0 80px;
+    padding: 0 45px;
   }
 }
 
@@ -161,7 +161,7 @@
   @media (min-width: $desktop-width-min) {
     position: relative;
     top: 0;
-    left: 50px;
+    left: 80px;
     margin: 0 20px 0 30px;
     padding: 15px 28px;
     display: block;
