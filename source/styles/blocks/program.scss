@@ -34,7 +34,7 @@
     grid-template-rows: 65px auto auto auto;
     grid-template-columns: 37px 1fr 300px;
     gap: 15px;
-    margin: 0;
+    margin: -2px 0 0;
     padding: 0;
   }
 
@@ -129,7 +129,7 @@
 
   @media (min-width: $tablet-width) {
     align-self: start;
-    padding: 0 57px 0 0;
+    padding: 5px 57px 0 0;
   }
 
   @media (min-width: $desktop-width-min) {

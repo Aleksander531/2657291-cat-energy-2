@@ -4,11 +4,11 @@
   padding: 0 20px;
 
   @media (min-width: $tablet-width) {
-    padding: 0 30px 47px;
+    padding: 0 30px 56px;
   }
 
   @media (min-width: $desktop-width-min) {
-    padding: 0 30px 69px;
+    padding: 0 30px 100px;
   }
 }
 
@@ -23,10 +23,8 @@
   @media (min-width: $tablet-width) {
     margin: 0 auto;
     display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    gap: 126px 73px;
-    padding-right: 75px;
+    grid-template-columns: 245px 245px;
+    gap: 135px 138px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -45,18 +43,17 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 245px;
     gap: 31px 0;
-    padding: 0 15px 0 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width-min) {
     display: flex;
     flex-direction: column;
-    max-width: 250px;
+    max-width: 245px;
     padding: 0;
-    margin-right: 40px;
   }
 }
 
@@ -67,7 +64,6 @@
   left: 0;
   width: 60px;
   height: 60px;
-  background-color: red;
   grid-column: 1/2;
   grid-row: 1/2;
 
@@ -91,30 +87,77 @@
 }
 
 .description__item--one {
+  margin: 0;
+
   &::before {
     background-image: url("/icons/sheet.svg");
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin: 0 80px 0 0;
+    min-width: 230px;
+  }
 }
 
-.description__item--two::before {
-  background-image: url("/icons/powder.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.description__item--two {
+  margin: 0;
+
+  &::before {
+    background-image: url("/icons/powder.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin: -1px 80px 0 0;
+  }
 }
 
-.description__item--tree::before {
-  background-image: url("/icons/tableware.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  left: 38px;
+.description__item--tree {
+  margin: 0;
+
+  &::before {
+    background-image: url("/icons/tableware.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin: -1px 80px 0 0;
+  }
 }
 
-.description__item--four::before {
-  background-image: url("/icons/clock.svg");
-  background-position: center;
-  background-repeat: no-repeat;
+.description__item--four {
+  margin: 0;
+
+  &::before {
+    background-image: url("/icons/clock.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin: -1px 0 0;
+  }
 }
 
 
@@ -157,11 +200,11 @@
     line-height: 24px;
     grid-row: 2/3;
     grid-column: 1/-1;
-    padding: 0 39px 0 0;
+    padding: 0;
   }
 
   @media (min-width: $desktop-width-min) {
-    padding: 0 0 55;
+    padding: 0;
     grid-column: 1/-1;
   }
 }

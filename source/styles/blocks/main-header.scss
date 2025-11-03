@@ -3,9 +3,10 @@
   grid-template-columns: min-content 1fr min-content;
   justify-content: space-between;
   align-items: center;
-  padding: 13px 7px 14px 20px;
+  padding: 11px 7px 14px 20px;
   max-width: 1280px;
   margin: 0 auto;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: min-content 1fr;
@@ -27,6 +28,10 @@
   @media (min-width: $tablet-width) {
     margin-right: 90px;
     width: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 18px;
   }
 }
 

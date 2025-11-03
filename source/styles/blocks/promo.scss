@@ -24,7 +24,7 @@
       min-height: 694px;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/promo-background@1x.png");
       background-repeat: no-repeat;
-      background-position: right bottom;
+      background-position: top right;
       background-size: cover;
       left: 0;
       top: -169px;
@@ -152,10 +152,12 @@
   @media (min-width: $tablet-width) {
     width: max-content;
     position: absolute;
-    top: 160px;
-    left: 100px;
+    top: 295px;
+    left: 120px;
     font-size: 20px;
     line-height: 26px;
+    padding: 14px 30px 14px 26px;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width-min) {

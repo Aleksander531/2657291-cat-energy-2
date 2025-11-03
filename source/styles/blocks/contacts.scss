@@ -3,6 +3,7 @@
   grid-template-rows: auto 1fr;
   background-color: rgba(255, 255, 255, 1);
   position: relative;
+  max-width: 1280px;
 
   @media (min-width: $desktop-width-min) {
     grid-template-rows: 95px max-content 106px;
@@ -36,6 +37,7 @@
     grid-column: 2/3;
     grid-row: 2/3;
     z-index: 2;
+    padding: 61px 18px 10px 79px;
   }
 }
 
@@ -73,12 +75,23 @@
     line-height: 20px;
     padding: 0 60px 0 0;
   }
+
+  @media (min-width: $desktop-width-min) {
+    display: inline-block;
+    text-align: left;
+    padding: 0 60px 0 9px;
+  }
 }
 
 .contacts__address-sity {
   @media (min-width: $tablet-width) {
     margin-top: 18px;
     display: inline-block;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    display: inline-block;
+    padding: 0;
   }
 }
 
@@ -118,4 +131,3 @@
   height: 100%;
   z-index: 1;
 }
-
