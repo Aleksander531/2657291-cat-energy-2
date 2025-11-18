@@ -3,7 +3,6 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1280px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -15,19 +14,18 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     padding: 0 0 263px;
+    max-width: 1440px;
+    width: 100%;
 
     &::before {
       grid-column: 2/3;
       content: "";
       position: absolute;
-      width: 50vw;
-      min-height: 694px;
-      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/promo-background@1x.png");
-      background-repeat: no-repeat;
-      background-position: top right;
-      background-size: cover;
-      left: 0;
-      top: -169px;
+      width: 100%;
+      min-height: 750px;
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
+      left: 1%;
+      top: -36%;
       z-index: -2;
     }
   }
@@ -36,7 +34,7 @@
 .promo__wrapper-img {
   position: absolute;
   top: 167px;
-  left: 50%;
+  left: 52%;
   transform: translate(-50%);
 
   @media (min-width: $tablet-width) {
@@ -56,7 +54,7 @@
   @media (min-width: $desktop-width-min) {
     position: absolute;
     top: -26px;
-    left: -25%;
+    left: -22%;
     grid-column: 2/4;
     grid-row: 1/-1;
   }
@@ -67,7 +65,7 @@
   background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/promo-background@1x.png") center/cover;
   padding-bottom: 50px;
   margin: 0 auto;
-  width: 100vw;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     background: rgba(255, 255, 255, 1);
@@ -91,7 +89,7 @@
   color: $light-color;
   position: relative;
   z-index: 2;
-  padding: 27px 36px 25px;
+  padding: 27px 0 25px 16px;
   margin: 0;
   letter-spacing: 0;
 
@@ -105,7 +103,7 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    margin: 55px 0 0;
+    margin: 59px 0 0 74px;
     padding: 0;
     grid-column: 1/2;
     grid-row: 1/2;
@@ -125,7 +123,7 @@
   position: relative;
   z-index: 2;
   margin: 0;
-  padding-bottom: 114px;
+  padding: 0 0 114px 13px;
 
   @media (min-width: $tablet-width) {
     color: $title-color;
@@ -138,7 +136,7 @@
 
   @media (min-width: $desktop-width-min) {
     color: $title-color;
-    margin: 40px 0 32px;
+    margin: 40px 0 32px 75px;
     padding: 0 0 20px;
     text-align: left;
     font-size: 20px;
@@ -147,29 +145,31 @@
 }
 
 .button--promo {
-  margin: 138px 20px 0;
+  margin: 137px 20px 0;
+  width: 92%;
 
   @media (min-width: $tablet-width) {
-    width: max-content;
     position: absolute;
     top: 295px;
     left: 120px;
     font-size: 20px;
     line-height: 26px;
-    padding: 14px 30px 14px 26px;
+    padding: 14px 25px 14px 26px;
     margin: 0;
+    width: 242px;
   }
 
   @media (min-width: $desktop-width-min) {
     position: relative;
     top: 0;
     left: 80px;
-    margin: 0 20px 0 30px;
-    padding: 15px 28px;
+    margin: 0 20px 0 111px;
+    padding: 14px 25px;
     display: block;
     grid-column: 1/2;
     grid-row: 1/2;
     font-size: 20px;
     line-height: 26px;
+    width: 244px;
   }
 }

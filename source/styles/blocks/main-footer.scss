@@ -1,5 +1,10 @@
 .main-footer {
   background-color: rgba(242, 242, 242, 1);
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
 .main-footer__container {
@@ -8,21 +13,21 @@
   grid-template-rows: 84px 63px 1fr;
   margin: 0 auto;
   padding: 0 20px;
-  max-width: 1280px;
+  max-width: 320px;
   align-items: center;
 
   @media (min-width: $tablet-width) {
-    margin: 0 auto;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 55px 30px;
+    padding: 57px 30px 55px;
+    max-width: 768px;
   }
 
   @media (min-width: $desktop-width-min) {
-    margin: 0 auto;
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 67px 37px;
+    max-width: 1280px;
   }
 }
 

@@ -4,6 +4,7 @@
   padding: 0;
   display: grid;
   row-gap: 32px;
+  width: 280px;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -130,6 +131,7 @@
     grid-column: 3/-1;
     grid-row: 1/2;
     display: grid;
+    width: 87%;
   }
 }
 

@@ -13,51 +13,53 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <a class="main-header__logo" href="index.html">
-      <picture>
-        <source media="(min-width: 1280px)" width="202" height="59" type="image/svg+xml" srcset="images/logo-header-desktop.svg">
-        <source media="(min-width: 768px)" width="174" height="50" type="image/svg+xml" srcset="images/logo-header-tablet.svg">
-        <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта">
-      </picture>
-    </a>
-    <a class="main-header__logo-text" href="#">
-      <picture>
-        <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text.svg">
-        <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-text.svg">
-        <img src="images/logo-text.svg" width="101" height="18" alt="Логотип текст">
-      </picture>
-    </a>
+  <header class="main-header" data-test="header">
+    <div class="main-header__container">
+      <a class="main-header__logo" href="index.html">
+        <picture>
+          <source media="(min-width: 1280px)" width="202" height="59" type="image/svg+xml" srcset="images/logo-header-desktop.svg">
+          <source media="(min-width: 768px)" width="174" height="50" type="image/svg+xml" srcset="images/logo-header-tablet.svg">
+          <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип сайта">
+        </picture>
+      </a>
+      <a class="main-header__logo-text" href="#">
+        <picture>
+          <source media="(min-width: 1280px)" width="118" height="21" type="image/svg+xml" srcset="images/logo-text.svg">
+          <source media="(min-width: 768px)" width="101" height="18" type="image/svg+xml" srcset="images/logo-text.svg">
+          <img src="images/logo-text.svg" width="101" height="18" alt="Логотип текст">
+        </picture>
+      </a>
 
-    <nav class="navigation">
-      <ul class="navigation__list navigation__list--close">
-        <li class="navigation__item">
-          <a href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="navigation__item navigation__item--active">
-          <a href="catalog.html">
-            каталог продукции
-          </a>
-        </li>
-        <li class="navigation__item">
-          <a href="#">
-            подбор программы
-          </a>
-        </li>
-      </ul>
-      <button class="navigation__toggle" type="button" aria-label="Открыть меню">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
+      <nav class="navigation">
+        <ul class="navigation__list navigation__list--close">
+          <li class="navigation__item">
+            <a href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="navigation__item navigation__item--active navigation__item--special--active">
+            <a href="catalog.html">
+              каталог продукции
+            </a>
+          </li>
+          <li class="navigation__item navigation__item--special">
+            <a href="#">
+              подбор программы
+            </a>
+          </li>
+        </ul>
+        <button class="navigation__toggle" type="button" aria-label="Открыть меню">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
   </header>
 
   <main class="page__main">
     <h1 class="page__title page__title--catalog">Каталог продукции</h1>
-    <section class="catalog">
+    <section class="catalog" data-test="catalog">
       <h2 class="visually-hidden">Каталог товаров</h2>
       <ul class="catalog__list">
         <li class="catalog-item">
@@ -264,7 +266,7 @@
       </ul>
     </section>
 
-    <section class="section section--additional">
+    <section class="section section--additional" data-test="additional">
       <h2 class="section__title section__title--additionally">Дополнительные товары</h2>
       <ul class="additional-list">
         <li class="additional-list__item">
