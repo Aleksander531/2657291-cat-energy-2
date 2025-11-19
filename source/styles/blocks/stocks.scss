@@ -7,19 +7,19 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-bottom: 40px;
+  padding: 0 25px 15px 23px;
   position: relative;
-  margin: 35px 20px 0;
+  margin: 40px 0 0;
 
   &::before {
-    content: "Закажите все и получите чехол для кота в подарок!";
+    content: "Закажите все и\00A0получите чехол для кота в подарок!";
     position: relative;
     top: 186px;
     left: 50%;
     transform: translate(-50%);
     display: block;
-    width: 50%;
-    height: 100%;
+    width: 70%;
+    height: 70%;
     text-align: center;
     color: $light-color;
     font-family: $secondary-font;
@@ -32,7 +32,7 @@
     content: "";
     position: relative;
     display: block;
-    top: -58px;
+    top: -78px;
     left: 50%;
     transform: translate(-50%);
     width: 78px;
