@@ -309,18 +309,44 @@
     border: transparent;
   }
 
-  &.example__button-slider::after {
+  &::after {
     content: "";
     position: relative;
     display: block;
-    left: -17px;
+    left: -19px;
+    top: -20px;
     height: 40px;
     width: 40px;
-    background-image: url("/icons/slider.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+    mask-image: url("/icons/stack-vector.svg");
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: 28px;
+    background-color: rgba(102, 102, 102, 1);
+  }
+
+  &::before {
+    content: "";
+    position: relative;
+    display: block;
+    left: -19px;
+    top: 20px;
+    height: 40px;
+    width: 40px;
+    border: solid 2px rgba(102, 102, 102, 1);
+    border-radius: 20px;
+  }
+
+  &:hover {
+    background-color: rgba(104, 183, 56, 1);
+    filter: invert(47%) sepia(85%) saturate(1337%) hue-rotate(87deg) brightness(97%) contrast(93%);
+  }
+
+  &:active {
+    background-color: rgba(94, 170, 47, 1);
+    opacity: 60%;
   }
 }
+
 
 .example__slider {
   padding-bottom: 31px;

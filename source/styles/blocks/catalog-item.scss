@@ -166,6 +166,14 @@
   grid-column: 1/-1;
   grid-row: 2/3;
   width: 100%;
+
+  &:hover {
+    background-color: rgba(94, 170, 47, 1);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3)
+  }
 }
 
 .catalog-item--special {
@@ -190,6 +198,11 @@
   width: 280px;
   margin: 0 auto;
   padding: 11px 94px 10px 93px;
+
+  &:hover,
+  &:focus {
+    background-color: rgba(235, 235, 235, 1);
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: auto;

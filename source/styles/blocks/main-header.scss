@@ -46,6 +46,15 @@
   align-items: center; */
   min-width: 33px;
   margin: 1px 10px 0 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 50%;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 90px;
