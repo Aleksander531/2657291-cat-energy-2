@@ -12,12 +12,6 @@
   background-color: $light-color;
   color: $dark-color;
   width: 100%;
-
-  @media (min-width: $desktop-width-min) {
-    background-image: url("/images/promo-background-desktop@1x.png");
-    background-repeat: no-repeat;
-    background-position: 102% 2%;
-  }
 }
 
 .page__main {
@@ -25,18 +19,11 @@
   width: 100%;
 }
 
-.page__title--catalog {
-  padding: 8px 20px 0;
-  margin: 20px 0 40px;
-  font-family: $primary-font;
-  font-weight: 400;
-  font-size: 36px;
-  line-height: 36px;
-  letter-spacing: 0%;
+.page__container-catalog {
+  width: 100%;
 
-  @media (min-width: $tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
-    padding: 0 30px;
+  @media (min-width: $desktop-width-min) {
+    max-width: 1440px;
+    margin: 0 auto;
   }
 }

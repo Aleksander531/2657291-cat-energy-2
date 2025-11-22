@@ -9,7 +9,25 @@
   background-size: cover;
   padding: 0 25px 15px 23px;
   position: relative;
-  margin: 40px 0 0;
+  margin: 37px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 70px 0 0;
+    padding: 0 25px 41px 23px;
+    min-height: 0;
+    min-width: 708px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    display: grid;
+    grid-column: 2/-1;
+    grid-row: 2/-1;
+    align-items: center;
+    margin: 0;
+    min-width: 0;
+    width: 245px;
+    padding: 0 25px 10px 23px;
+  }
 
   &::before {
     content: "Закажите все и\00A0получите чехол для кота в подарок!";
@@ -26,6 +44,13 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+
+    @media (min-width: $tablet-width) {
+      top: 72px;
+      left: 488px;
+      width: 27%;
+      text-align: left;
+    }
   }
 
   &::after {
@@ -40,18 +65,10 @@
     background-image: url("/icons/icon_gift.svg");
     background-position: center;
     background-repeat: no-repeat;
-  }
 
-  @media (min-width: $tablet-width) {
-    margin: 70px 0 0;
-  }
-
-  @media (min-width: $desktop-width-min) {
-    display: grid;
-    grid-column: 2/-1;
-    grid-row: 2/-1;
-    align-items: center;
-    margin: 0;
-    width: 100%;
+    @media (min-width: $tablet-width) {
+      top: -21px;
+      left: 94px;
+    }
   }
 }

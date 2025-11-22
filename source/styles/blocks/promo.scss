@@ -12,9 +12,7 @@
   @media (min-width: $desktop-width-min) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    padding: 0 0 263px;
-    max-width: 1440px;
+    padding: 0 0 317px;
     width: 100%;
 
     &::before {
@@ -25,9 +23,36 @@
       min-height: 750px;
       background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85));
       left: 1%;
-      top: -36%;
+      top: -37%;
       z-index: -2;
     }
+
+    &::after {
+      grid-column: 2/3;
+      content: "";
+      position: absolute;
+      width: 100%;
+      min-height: 750px;
+      background-image: url("/images/promo-background-desktop@1x.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      top: -28%;
+      left: 1%;
+      z-index: -3;
+    }
+  }
+}
+
+.promo__container {
+  width: 100%;
+
+  @media (min-width: $desktop-width-min) {
+    grid-column: 1/-1;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 }
 
@@ -53,8 +78,8 @@
 
   @media (min-width: $desktop-width-min) {
     position: absolute;
-    top: -26px;
-    left: -22%;
+    top: -22px;
+    left: -155px;
     grid-column: 2/4;
     grid-row: 1/-1;
   }
@@ -62,7 +87,9 @@
 
 .promo__wrapper-text {
   position: relative;
-  background: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/promo-background@1x.png") center/cover;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/images/promo-background@1x.png");
+  background-position: center;
+  background-size: cover;
   padding-bottom: 50px;
   margin: 0 auto;
   width: 100%;
@@ -73,10 +100,13 @@
   }
 
   @media (min-width: $desktop-width-min) {
+    background: rgba(255, 255, 255, 1);
     grid-column: 1/2;
     grid-row: 1/2;
     width: 80%;
-    padding: 0 45px;
+    padding: 0 35px;
+    display: grid;
+    justify-content: end;
   }
 }
 
@@ -161,9 +191,9 @@
 
   @media (min-width: $desktop-width-min) {
     position: relative;
-    top: 0;
-    left: 80px;
-    margin: 0 20px 0 111px;
+    top: 291px;
+    left: 191px;
+    height: fit-content;
     padding: 14px 25px;
     display: block;
     grid-column: 1/2;
@@ -171,5 +201,6 @@
     font-size: 20px;
     line-height: 26px;
     width: 244px;
+    margin: 0;
   }
 }

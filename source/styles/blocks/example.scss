@@ -299,8 +299,8 @@
 
   @media (min-width: $desktop-width-min) {
     position: absolute;
-    top: 0;
-    left: 49%;
+    top: 12px;
+    left: 50%;
     height: 82%;
     width: 4px;
     background-color: rgba(102, 102, 102, 1);
@@ -341,8 +341,8 @@
   @media (min-width: $desktop-width-min) {
     grid-row: 1/-1;
     grid-column: 2/-2;
-    top: 26px;
-    left: 28%;
+    top: 16px;
+    left: 337px;
     z-index: 2;
     max-width: 50%;
     padding-bottom: 86px;
@@ -350,7 +350,7 @@
   }
 }
 
-.example__slider--left {
+.example__slider-left {
   position: absolute;
   top: -18px;
   left: 7px;
@@ -379,11 +379,11 @@
   }
 }
 
-.example__img--fat {
+.example__img-fat {
   object-fit: cover;
 }
 
-.example__slider---right {
+.example__slider-right {
   position: absolute;
   top: -18px;
   right: -7px;
@@ -412,7 +412,7 @@
   }
 }
 
-.example__img--skinny {
+.example__img-skinny {
   object-fit: cover;
   position: relative;
   right: 100%;

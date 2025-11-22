@@ -7,7 +7,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: stretch;
-    padding: 80px 70px;
+    padding: 41px 70px 79px;
     grid-template-rows: 1fr 1fr;
     width: 100%;
   }
@@ -17,7 +17,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 110px;
-    padding: 50px 0 104px;
+    padding: 55px 0 104px;
   }
 }
 
@@ -37,18 +37,6 @@
   background-color: rgba(255, 255, 255, 1);
   box-shadow: 40px 0 0 0 rgba(255, 255, 255, 1), -40px 0 0 0 rgba(255, 255, 255, 1);
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 45px;
-    right: 100%;
-    width: 100vw;
-    height: 2px;
-    background-color: rgba(104, 183, 56, 1);
-    z-index: -1;
-    box-shadow: 100vw 0 0 0 rgba(104, 183, 56, 1);
-  }
-
   @media (min-width: $tablet-width) {
     font-size: 32px;
     line-height: 32px;
@@ -56,7 +44,27 @@
 
   @media (min-width: $desktop-width-min) {
     align-self: start;
+    font-size: 40px;
+    line-height: 40px;
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 52px;
+    right: 100%;
+    width: 100vw;
+    height: 2px;
+    background-color: rgba(104, 183, 56, 1);
+    z-index: -1;
+    box-shadow: 100vw 0 0 0 rgba(104, 183, 56, 1);
+
+    @media (min-width: $desktop-width-min) {
+      top: 58px;
+    }
+  }
+
+
 }
 
 .subscribe__discription {
@@ -76,6 +84,13 @@
     display: grid;
     font-size: 24px;
     line-height: 32px;
+    margin: 0 0 62px;
+    padding: 24px 0 0;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    padding: 40px 200px 56px 0;
+    margin: 0;
   }
 }
 
@@ -89,6 +104,10 @@
     grid-row: 3/4;
     display: flex;
     justify-content: center;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    margin: 0 203px 0 0;
   }
 }
 
@@ -109,6 +128,7 @@
     grid-row: 3/4;
     display: flex;
     flex-grow: 2;
+    min-width: 376px;
   }
 
   @media (min-width: $desktop-width-min) {
@@ -123,8 +143,9 @@
 
   @media (min-width: $tablet-width) {
     grid-row: 3/4;
-    display: flex;
-    flex-grow: 1;
+    display: inline-block;
+    min-width: 256px;
+    padding: 15px 29px 13px 23px;
   }
 
   @media (min-width: $desktop-width-min) {

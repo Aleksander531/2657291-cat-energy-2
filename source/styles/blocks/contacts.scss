@@ -42,6 +42,12 @@
   }
 }
 
+.contacts__container--catalog {
+  @media (min-width: $tablet-width) {
+    background-color: rgba(242, 242, 242, 1);
+  }
+}
+
 .contacts__text {
   font-family: $primary-font;
   font-weight: 400;
