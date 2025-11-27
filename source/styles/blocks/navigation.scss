@@ -35,7 +35,7 @@
   @media (min-width: $desktop-width-min) {
     flex-wrap: wrap;
     background-color: transparent;
-    margin: 5px 0 0 34px;
+    margin: 5px 0 0 41px;
     justify-content: center;
     padding: 0;
     width: 95%;
@@ -148,7 +148,7 @@
   background-color: transparent;
   position: relative;
   padding: 0;
-  margin: 0 13px 0 0;
+  margin: 0;
 
   @media (min-width: $tablet-width) {
     display: none;

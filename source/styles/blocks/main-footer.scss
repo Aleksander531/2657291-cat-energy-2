@@ -20,14 +20,14 @@
   @media (min-width: $tablet-width) {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 57px 30px 55px;
+    padding: 49px 30px 55px;
     max-width: 768px;
   }
 
   @media (min-width: $desktop-width-min) {
     grid-template-rows: 1fr;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 67px 37px;
+    padding: 67px 30px;
     max-width: 1280px;
   }
 }
@@ -51,7 +51,7 @@
   }
 
   @media (min-width: $desktop-width-min) {
-    padding: 0;
+    padding: 0 0 0 7px;
   }
 }
 
@@ -67,7 +67,7 @@
   color: $dark-color;
   filter: grayscale(100%);
   display: flex;
-  padding: 20px 0 40px;
+  padding: 18px 0 40px;
   align-items: center;
 
   &:hover,
@@ -81,14 +81,15 @@
 
   @media (min-width: $tablet-width) {
     align-items: center;
-    padding: 0;
+    padding: 3px 0 0;
     display: flex;
     justify-content: flex-end;
-    margin: 0 -15px 0 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width-min) {
     padding: 0;
+    margin: 0 -7px 0 0;
   }
 }
 
