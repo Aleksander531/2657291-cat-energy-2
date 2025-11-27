@@ -1,3 +1,43 @@
+/* .promo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: $desktop-width-min) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 0 317px;
+    width: 100%;
+
+    &::before {
+      //grid-column: 2/3;
+      content: "";
+      background-image:
+        linear-gradient(
+            to right,
+            rgba(104, 183, 56, 0.85),
+            rgba(104, 183, 56, 0.85)
+        ),
+        url("/images/promo-background-desktop@1x.png");
+      background-repeat: no-repeat, no-repeat;
+      background-position: right, center right;
+      background-size: cover, cover;
+      display: grid;
+      position: absolute;
+      left: 50%;
+      top: -159px;
+      width: 50vw;
+      height: calc(159px + 100%);
+    }
+  }
+} */
+
 .promo {
   position: relative;
   display: flex;
