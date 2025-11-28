@@ -37,6 +37,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  border-bottom: solid 1px rgba(235, 235, 235, 1);
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -45,6 +46,7 @@
     padding: 0 30px;
     justify-content: center;
     align-items: start;
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width-min) {
