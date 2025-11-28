@@ -21,7 +21,7 @@
     grid-template-rows: repeat(4, auto);
     gap: 0;
     border: none;
-    padding: 0 0 0 38px;
+    padding: 0 0 0 81px;
   }
 }
 
@@ -46,9 +46,9 @@
   @media (min-width: $desktop-width-min) {
     grid-column: 1/-1;
     display: grid;
-    grid-template-columns: 1fr 1fr auto;
+    grid-template-columns: 1fr 1fr 276px;
     grid-template-rows: 1fr;
-    column-gap: 40px;
+    column-gap: 10px;
     align-items: center;
     padding: 0;
   }
@@ -79,6 +79,7 @@
     grid-column: 1/2;
     grid-row: 1/2;
     display: grid;
+    margin: 0;
   }
 }
 
@@ -98,6 +99,7 @@
     grid-column: 2/3;
     grid-row: 1/2;
     justify-content: space-between;
+    padding: 5px 10px 0 7px;
   }
 }
 
@@ -134,6 +136,10 @@
   }
 }
 
+.additional-list__item:nth-child(2) .additional-list__item-price {
+  margin: 0 14px 0 0;
+}
+
 .button--additional {
   grid-row: 3/-1;
 
@@ -156,6 +162,7 @@
     grid-row: 1/2;
     display: grid;
     width: 244px;
+    margin: 0 auto;
   }
 }
 
