@@ -1,12 +1,10 @@
-let f = document.querySelector(".oooo");
+const headerToggle = document.querySelector('.navigation__toggle');
+const navList = document.querySelector('.navigation__list');
 
-
-
-/*
-let headerToggle = document.querySelector(".main-header__toggle");
-headerToggle.addEventListener("click", function() {
-  headerToggle.classList.toggle(".main-header__toggle--active");
-})*/
-
-
+if (headerToggle && navList) {
+  headerToggle.addEventListener('click', () => {
+    headerToggle.classList.toggle('navigation__toggle--active');
+    navList.classList.toggle('navigation__list--close');
+  });
+}
 /* в этот файл добавляет скрипты*/
